@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp spec="1.0+"
+		codebase="https://sign.uslugi.io/java/"
+		href="stampitls.jnlp">
+		
+    <information>
+        <title>StampIT Local Services</title>
+        <vendor>Information Services JSC.</vendor>
+        <homepage href="http://www.is-bg.net"/>
+        <description>StampIT Local Services</description>
+		
+		<icon href="icon.png" kind="default"/>
+		<icon href="logo.png" kind="splash"/>
+	</information>
+	
+	<security>
+		<all-permissions/>
+	</security>
+	
+    <resources>
+        <j2se version="1.7+"
+              href="http://java.sun.com/products/autodl/j2se"/>			  
+        <jar href="LSManager.jar" main="true"/>
+        <jar href="SignerService.jar" download="eager"/>
+	</resources>
+	
+	<resources os="Windows" arch="x86">
+        <nativelib href="native/lsmanager-win32.jar"/>
+    </resources>
+
+	<resources os="Windows" arch="amd64">
+        <nativelib href="native/lsmanager-win64.jar"/>
+    </resources>
+    
+    <application-desc
+         name="StampIT Local Services Manager"
+         main-class="net.isbg.ls.lsmanager.AppGUI">
+     </application-desc>
+	 
+	<update check="always" policy="always"/>
+</jnlp>
