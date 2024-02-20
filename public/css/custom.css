@@ -1,0 +1,99 @@
+.required::after {
+	content: '*';
+	color: red;
+}
+
+.disabled_organisation {
+	background-color: #f2f2f2;
+}
+
+.bg-light-green{
+	background: #dbf7db;
+}
+
+.dt-buttons{
+	float: right;
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+  a:not(.btn) {
+    text-decoration: underline;
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #adb5bd;
+    page-break-inside: avoid;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  @page {
+    size: a3;
+  }
+  body {
+    min-width: 992px !important;
+  }
+  .container {
+    min-width: 992px !important;
+  }
+  .badge {
+    border: 1px solid #000;
+  }
+  .table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6 !important;
+  }
+  .table-dark {
+    color: inherit;
+  }
+  .table-dark th,
+  .table-dark td,
+  .table-dark thead th,
+  .table-dark tbody + tbody {
+    border-color: #dee2e6;
+  }
+
+	.content-header, 
+	.app-header, 
+	.app-sidebar, 
+	.no-print,
+	.sidebar-overlay,
+	.app-footer{
+		display: none !important;
+	}
+	* {
+	    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+	    color-adjust: exact !important;                 /* Firefox 48 – 96 */
+	    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+	}
+}
