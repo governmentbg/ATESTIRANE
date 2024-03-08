@@ -322,6 +322,10 @@
                     </ul>
                     <!--end::Sidebar Menu-->
                 </nav>
+                <div class="text-center mt-3">
+                    <img src="{{ asset('assets/img/vss-logo-1.png') }}" width="80%" class="mb-3" />
+                    <img src="{{ asset('assets/img/vss-logo-2.png') }}" width="80%" />
+                </div>
             </div>
             <!--end::Sidebar Wrapper-->
         </aside>
@@ -356,9 +360,18 @@
             <!--end::App Content-->
         </main>
         <footer class="app-footer">
-            <strong>
-            	ВСС | Електронна атестация
-            </strong>
+            <div class="row">
+                <div class="col-md-3">
+                    <strong>
+                    	ВСС | Електронна атестация
+                    </strong>
+                </div>
+                <div class="col-md-9">
+                    <div class="text-center" style="font-size: 0.6rem">
+                        <b>Проект</b> „Подобряване на процедурите по атестация и формиране на възнагражденията на съдебните служители в Република България“,<br/>
+                        <b>Договор № BG05SFOP001-3.007-0002-C01/01.06.2021 г. за предоставяне на безвъзмездна финансова помощ по Оперативна програма „Добро управление“</b>
+                    </div>
+                </div>
         </footer>
     </div>
     <!--end::App Wrapper-->
